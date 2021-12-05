@@ -24,6 +24,67 @@ To begreper på basisnivå som er nyttige å kjenne til:
 
 
 ## Basis-kommandoer i Git
+Disse kommandoene er essensielle for basis bruk av Git:
+* git init
+    
+    Initialiserer et nytt Git repository og begynner sporing av endringer i katalogen (mappen). En skjult undermappe `.git` blir opprettet i repository-katalogen. Denne inneholder datastrukturen nødvendig for versjonskontroll.
+    
+* git clone
+    
+    Oppretter en lokal kopi av et prosjekt som allerede eksisterer "remotely". Klonen inkluderer alle prosjektfiler, historikk og branches.
+    Eksempel:
+
+    ```console
+    developer@machine$ git clone git@github.com:partlythomas/iac-terraform-demo.git
+    ```
+
+* git add
+    
+    Iscenesetter (stager) en endring. Dette er del én av en to-stegs prosess. Alle endringer som blir staged blir del av neste snapshot og del av prosjektets historikk.
+    Eksempel:
+
+    ```console
+    developer@machine$ git add readme.md
+    ```
+
+* git commit
+    
+    Lagrer et "snapshot" og fullfører endringssporingen. Alt som blir staget med `git add` blir del av snapshotet som skapes med `git commit`.<p>
+    Eksempel:
+
+    ```console
+    developer@machine$ git commit -m "Change text in readme.md file"
+    ```
+* git status
+    
+    Viser status over endringer som `untracked`, `modified` eller `staged`
+    Eksempel:
+
+    ```console
+    developer@machine$ git status
+    Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        docs/02-infrastruktur-som-kode.md
+    ```
+* git branch
+    
+    Viser hvilke branches som er tilgjengelige og hvilken branch du arbeider i.
+    Eksempel:
+
+    ```console
+    developer@machine$ git branch
+    * main
+    development-branch
+    development-branch2
+    ```
+* git merge
+
+    Slår linjer med kode sammen. Kommandoen benyttes for å kombinere endringer utført i to ulike branches. F.eks. endringer fra en `feature branch` inn til `main` branchen for utrulling av en ny funksjon.
+
+
+* git push
+    * Oppdaterer sentralt repository (remote) med alle `commits` som er lagret lokalt i en branch.
+
 
 
 
@@ -38,4 +99,4 @@ To begreper på basisnivå som er nyttige å kjenne til:
 
 # Kilder
 * [About Git - Github.com](https://docs.github.com/en/get-started/using-git/about-git)
-* 
+* [Basic Git commands - GitHub.com](https://docs.github.com/en/get-started/using-git/about-git#basic-git-commands)
