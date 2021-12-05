@@ -10,7 +10,7 @@ Om du ikke har en eksisterende GitHub-konto, opprett en på [GitHub](https://git
 
 ## Programvare som må installeres
 ## Windows Terminal
-> Ikke strengt nødvendig, men hendig terminal-verktøy uansett.
+Ikke strengt nødvendig, men det er et hendig terminal-verktøy uansett som vi kommer til å benytte under demoen.
 
 [Microsoft Store - Windows Terminal](https://www.microsoft.com/en-us/p/windows-terminal)
 
