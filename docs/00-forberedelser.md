@@ -37,6 +37,7 @@ Verktøy for å kunne benytte Git versjonskontroll-verktøy i Windows.
 
 ### Git alternativ: Windows Subsystem for Linux 2 (Ubuntu) med innebygget Git
 Om du har Windows Subsystem for Linux 2 installert på din Windows-maskin er dette ofte en bedre opplevelse ved bruk av Git og Visual Studio Code.
-Ved bruk av WSL2 anbefales også bruk av Visual Studio Code extension, <Remote - WSL>
-https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl
-Obs: Ikke bruk WSL2-alternativet for denne demoen om du ikke er kjent med bruken av det fra før.
+Ved bruk av WSL2 anbefales også bruk av Visual Studio Code extension, [Remote - WSL](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl
+)
+
+>Obs: Ikke bruk WSL2-alternativet for denne demoen om du ikke er kjent med bruken av det fra før.
