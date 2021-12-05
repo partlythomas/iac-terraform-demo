@@ -83,7 +83,7 @@ Disse kommandoene er essensielle for basis bruk av Git:
 
 
 * git push
-    * Oppdaterer sentralt repository (remote) med alle `commits` som er lagret lokalt i en branch.
+    * Oppdaterer sentralt repository (remote) med alle endringer i `commits` som er lagret lokalt i en branch.
 
 
 
