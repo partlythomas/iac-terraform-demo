@@ -8,24 +8,34 @@ Om du ikke har en eksisterende GitHub-konto, opprett en på [GitHub](https://git
 >GitHub-kontoen må ikke nødvendigvis være knyttet til din jobb-epost. Det er ofte foretrukket å opprette denne mot en personlig e-post. Det er vanlig praksis hos flere bedrifter å la utviklere benytte sine private GitHub-kontoer inn i prosjekter.
 
 
-## Programvare
+## Programvare som må installeres
+## Windows Terminal
+> Ikke strengt nødvendig, men hendig terminal-verktøy uansett.
 
-# Visual Studio Code
+[Microsoft Store - Windows Terminal](https://www.microsoft.com/en-us/p/windows-terminal)
+
+## Visual Studio Code
+Koderedigerings-verktøy med bred støtte for mange språk og tillegg.
+
 [Visual Studio Code - Download](https://code.visualstudio.com)
 
-## Visual Studio Code Extension: Terraform
+### Visual Studio Code Extension: Terraform
 [Visual Studio Marketplace - Terraform](https://marketplace.visualstudio.com/items?itemName=HashiCorp.terraform)
 
-# Windows Terminal
-[Microsoft Store - Windows Terminal](https://www.microsoft.com/en-us/p/windows-terminal)
-> Ikke strengt nødvendig, men hendig verktøy uansett.
 
-# Git for Windows
+## Azure CLI
+Verktøy for å kunne benytte Azure CLI bash-type (Linux) kommandoer mot Azure.
+
+[Install Azure CLI on Windows](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli-windows?tabs=azure-cli)
+
+## Git for Windows
+Verktøy for å kunne benytte Git versjonskontroll-verktøy i Windows.
+
 [Git for Windows - Downloads](https://git-scm.com/download/win) (Velg 64-bit installasjon)
 
-Det er mange steg i installasjonen, men du kan velge standardvalgene for alt.
+> Det er mange steg i installasjonen, men du kan velge standardvalgene for alt.
 
-## Git alternativ: Windows Subsystem for Linux 2 (Ubuntu) med innebygget Git
+### Git alternativ: Windows Subsystem for Linux 2 (Ubuntu) med innebygget Git
 Om du har Windows Subsystem for Linux 2 installert på din Windows-maskin er dette ofte en bedre opplevelse ved bruk av Git og Visual Studio Code.
 Ved bruk av WSL2 anbefales også bruk av Visual Studio Code extension, <Remote - WSL>
 https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl
