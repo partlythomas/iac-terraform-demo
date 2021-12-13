@@ -44,10 +44,25 @@ ssh-add ~/.ssh/id_ed25519
 
 
 ## Legg til SSH-nøkkel i GitHub
-1. Se [Adding a new SSH key to your GitHub account - github.com](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)
+1. Åpne den *offentlige* delen av SSH-nøkkelparet, `C:\users\%USERNAME%\.ssh\id_ed25519.pub` i Notepad eller et annen tekstredigerings-program og kopier hele innholdet.
+
+2. På [github.com](https://github.com), klikk på profilbildet ditt og velg `Settings` fra menyen.
+
+3. Fra `Settings`-menyen, klikk deg inn på `SSH and GPG keys`.
+
+4. Velg `New SSH key` og navngi denne til noe som er identifiserbart med din maskin. F.eks. `Laptop jobb` i felt `Title`.
+
+5. Lim inn innholdet fra den offentlige delen av SSH-nøkkelparet i `Key`-feltet.
+
+6. Klikk `Add SSH key`
+
+7. Bekreft handlingen med GitHub-passordet ditt om nødvendig.
 
 
 
 # Kilder
 * [Generating a new SSH key and adding it to the ssh-agent - github.com](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
 * [Adding a new SSH key to your GitHub account - github.com](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)
+
+
+# **Gå videre til: [Git demo 2 - Fork dette repositoriet!](./02-git-demo-1.md)**

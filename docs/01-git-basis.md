@@ -94,9 +94,10 @@ Disse kommandoene er essensielle for basis bruk av Git:
     * Oppdaterer sentralt repository (remote) med alle endringer i `commits` som er lagret lokalt i en branch.
 
 
-# **Gå videre til: [Demo 1 - Konfigurer GitHub-autentisering](./02-git-demo-1.md)**
-
 
 # Kilder
 * [About Git - github.com](https://docs.github.com/en/get-started/using-git/about-git)
 * [Basic Git commands - gitHub.com](https://docs.github.com/en/get-started/using-git/about-git#basic-git-commands)
+
+
+# **Gå videre til: [Git demo 1 - Konfigurer GitHub-autentisering](./02-git-demo-1.md)**
