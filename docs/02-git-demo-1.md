@@ -1,5 +1,5 @@
 
-# Demo 1 - Konfigurer GitHub-autentisering
+# Git demo 1 - Konfigurer GitHub-autentisering
 
 ## Generere SSH-nøkkelpar for autentisering i GitHub
 SSH-nøkler benyttes for autentisering mellom lokal maskin og GitHub. Ved å knytte en offentlig SSH-nøkkel mot en privat del av nøkkelen vil GitHub kunne verifisere at maskinen som forespørselen kommer fra er tillatt å koble seg opp i konteksten av din GitHub-brukerkonto.
