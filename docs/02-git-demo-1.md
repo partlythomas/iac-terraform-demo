@@ -50,7 +50,7 @@ ssh-add ~/.ssh/id_ed25519
 
 3. Fra `Settings`-menyen, klikk deg inn på `SSH and GPG keys`.
 
-4. Velg `New SSH key` og navngi denne til noe som er identifiserbart med din maskin. F.eks. `Laptop jobb` i felt `Title`.
+4. Velg `New SSH key` og navngi denne til noe som er identifiserbart med din maskin. F.eks. `Laptop jobb` i `Title`-feltet.
 
 5. Lim inn innholdet fra den offentlige delen av SSH-nøkkelparet i `Key`-feltet.
 
