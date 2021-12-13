@@ -13,6 +13,8 @@ I korte trekk kan Git-historikken i et prosjekt hjelpe utviklere med å finne ut
 
 Ved å være et <i>distribuert</i> versjonskontrollsystem vil det si at utviklere laster ned all kode og historikk til lokal maskin. Kommunikasjon med det sentrale systemet (f.eks. GitHub, GitLab, Azure DevOps osv.) skjer i hovedsak kun ved nedlasting eller opplasting av endret kode.
 
+![](/docs/img/01-git-basis/01-xkcd.png)
+
 ## Begreper
 To begreper på basisnivå som er nyttige å kjenne til:
 
@@ -21,6 +23,9 @@ To begreper på basisnivå som er nyttige å kjenne til:
     [partlythomas/iac-terraform-demo](https://github.com/partlythomas/iac-terraform-demo) er et repository.
 * Branch
     * En branch er en avgrening fra et prosjekt. En branch kan f.eks. brukes til å skrive endringer eller tillegg til kode uten å påvirke andre grener i prosjektet. Disse endringene kan senere sammenslås inn i prosjektet ved bruk av merge eller pull request.
+
+* Fork
+    * En fork er en kopi av et repository som legges på en egen, helt uavhengig konto. Fork er nyttig for å videreutvikle på noen andres arbeid, eller for å skape sin egen avart.
 
 
 ## Basis-kommandoer i Git
@@ -55,6 +60,7 @@ Disse kommandoene er essensielle for basis bruk av Git:
     ```console
     developer@machine$ git commit -m "Change text in readme.md file"
     ```
+
 * git status
     
     Viser status over endringer som `untracked`, `modified` eller `staged`
@@ -66,6 +72,7 @@ Disse kommandoene er essensielle for basis bruk av Git:
   (use "git add <file>..." to include in what will be committed)
         docs/02-infrastruktur-som-kode.md
     ```
+
 * git branch
     
     Viser hvilke branches som er tilgjengelige og hvilken branch du arbeider i.
@@ -77,6 +84,7 @@ Disse kommandoene er essensielle for basis bruk av Git:
     development-branch
     development-branch2
     ```
+
 * git merge
 
     Slår linjer med kode sammen. Kommandoen benyttes for å kombinere endringer utført i to ulike branches. F.eks. endringer fra en `feature branch` inn til `main` branchen for utrulling av en ny funksjon.
@@ -91,12 +99,25 @@ Disse kommandoene er essensielle for basis bruk av Git:
 # Demo
 
 ## GitHub SSH-nøkler for autentisering
+SSH-nøkler benyttes for autentisering mellom lokal maskin og GitHub. Ved å knytte en offentlig SSH-nøkkel mot en privat del av nøkkelen vil GitHub kunne verifisere at maskinen som forespørselen kommer fra er tillatt å koble seg opp i konteksten av din GitHub-brukerkonto.
 
-## Fork kildekoden i partlythomas/iac-terraform-demo
-1. Fork this repository: https://github.com/partlythomas/iac-terraform-demo
+1. Åpne Git Bash på lokal maskin
+2. Lim inn teksten under, men med din egen e-postadresse tilknyttet din GitHub-brukerkonto.
+```console
+developer@machine$ ssh-keygen -t ed25519 -C "your_email@example.com"
+``` 
+
+
+## Fork dette repositoriet!
+1. Åpne [partlythomas/iac-terraform-demo](https://github.com/partlythomas/iac-terraform-demo) og klikk på `Fork`-knappen oppe til høyre på siden.
+
+    
+2. 
+
 
 
 
 # Kilder
 * [About Git - Github.com](https://docs.github.com/en/get-started/using-git/about-git)
 * [Basic Git commands - GitHub.com](https://docs.github.com/en/get-started/using-git/about-git#basic-git-commands)
+* [Generating a new SSH key and adding it to the ssh-agent - GitHub.com](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
