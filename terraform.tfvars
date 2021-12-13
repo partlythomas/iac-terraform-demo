@@ -1,2 +1,2 @@
-demo-username = "svjopp-123"
+demo-username = ""
 location      = "westeurope"
