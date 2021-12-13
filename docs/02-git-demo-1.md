@@ -24,7 +24,7 @@ ssh-keygen -t ed25519 -C "your_email@example.com"
 > Enter same passphrase again: [Type passphrase again]
 ```
 
->Tips: For å unngå å skrive passord for SSH-nøkkelen hver gang den brukes brukes ved f.eks. `git pull` eller `git push` kan en konfigurere ´ssh-agent´ til å sikkert håndtere dette f.eks. ved hver omstart av maskinen.
+>Tips: For å unngå å skrive passord for SSH-nøkkelen hver gang den brukes brukes ved f.eks. `git pull` eller `git push` kan en konfigurere `ssh-agent` til å sikkert håndtere dette f.eks. ved hver omstart av maskinen.
 >
 >Se [Working with SSH key passphrases - github.com](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/working-with-ssh-key-passphrases).
 
