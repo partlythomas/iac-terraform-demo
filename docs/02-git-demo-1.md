@@ -65,4 +65,4 @@ ssh-add ~/.ssh/id_ed25519
 * [Adding a new SSH key to your GitHub account - github.com](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)
 
 
-# **Gå videre til: [Git demo 2 - Fork dette repositoriet!](./02-git-demo-1.md)**
+# **Gå videre til: [Git demo 2 - Fork dette repositoriet!](./03-git-demo-2.md)**
