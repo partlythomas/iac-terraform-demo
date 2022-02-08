@@ -6,7 +6,5 @@ Demoen går også innom temaer som basis bruk av Git, Visual Studio Code, Window
 
 
 ## Kildemateriell
-Materialet i denne demoen er løst basert på flere kilder:
-https://docs.microsoft.com/en-us/azure/app-service/provision-resource-terraform
-
+Materialet i denne demoen er løst basert på kursmateriale fra HashiCorp:
 https://learn.hashicorp.com/tutorials/terraform/infrastructure-as-code?in=terraform/azure-get-started
