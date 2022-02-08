@@ -9,12 +9,12 @@ Om du ikke har en eksisterende GitHub-konto, opprett en på [GitHub](https://git
 
 
 ## Programvare som må installeres
-## Windows Terminal
+### Windows Terminal
 Ikke strengt nødvendig, men det er et hendig terminal-verktøy uansett som vi kommer til å benytte under demoen.
 
 [Microsoft Store - Windows Terminal](https://www.microsoft.com/en-us/p/windows-terminal)
 
-## Visual Studio Code
+### Visual Studio Code
 Koderedigerings-verktøy med bred støtte for mange språk og tillegg.
 
 [Visual Studio Code - Download](https://code.visualstudio.com)
@@ -23,12 +23,12 @@ Koderedigerings-verktøy med bred støtte for mange språk og tillegg.
 [Visual Studio Marketplace - Terraform](https://marketplace.visualstudio.com/items?itemName=HashiCorp.terraform)
 
 
-## Azure CLI
+### Azure CLI
 Verktøy for å kunne benytte Azure CLI bash-type (Linux) kommandoer mot Azure.
 
 [Install Azure CLI on Windows](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli-windows?tabs=azure-cli)
 
-## Git for Windows
+### Git for Windows
 Verktøy for å kunne benytte Git versjonskontroll-verktøy i Windows.
 
 [Git for Windows - Downloads](https://git-scm.com/download/win) (Velg 64-bit installasjon)
