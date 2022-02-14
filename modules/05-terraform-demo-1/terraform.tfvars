@@ -1,0 +1,2 @@
+demo-username = ""
+location      = "westeurope"
