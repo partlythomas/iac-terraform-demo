@@ -121,7 +121,7 @@ Terraform må initialiseres i den aktuelle katalogen hvor konfigurasjonen ligger
 
     Se [Command: apply - Terraform.io](https://www.terraform.io/cli/commands/apply) for mer informasjon om kommandoen.
 
-6. Når `terraform apply` kommandoen er ferdig kjørt vil du se en oppsummering i konsollet over hva som er utført.
+6. Når `terraform apply`-kommandoen er ferdig kjørt vil du se en oppsummering i konsollet over hva som er utført.
 
     Eksempel:
     ```console
@@ -180,5 +180,17 @@ For å verifisere at ressursen faktisk har blitt opprettet kan du finne frem til
     Terraform will destroy all your managed infrastructure, as shown above.
     There is no undo. Only 'yes' will be accepted to confirm.
     ```
+
+3. Når `terraform destroy`-kommandoen er ferdig kjørt vil du se en oppsummering i konsollet over hva som er utført.
+
+    Eksempel:
+    ```console
+    azurerm_resource_group.rg: Destroying... [id=/subscriptions/########-####-####-####-#########/resourceGroups/terraform-demo-jzygex]
+    azurerm_resource_group.rg: Still destroying... [id=/subscriptions/########-####-####-####-#########/resourceGroups/terraform-demo-jzygex, 10s elapsed]
+    azurerm_resource_group.rg: Destruction complete after 15s
+
+    Destroy complete! Resources: 1 destroyed.
+    ```
+
 
 # **Gå videre til: [Terraform demo 2 - Endre infrastruktur](./06-terraform-demo-2.md)**
