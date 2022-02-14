@@ -44,9 +44,9 @@ Eksempel på vellykket initiell kloning:
     Resolvind deltas: 100% (39/39), done.
     ```
 
-8. Verifiser at repositoriet er klonet til forventet katalog, `/code/iac-terraform-demo` ved å åpne katalogen i Visual Studio Code og inspiser innholdet.
+8. Verifiser at repositoriet er klonet til forventet katalog, `/code/iac-terraform-demo` ved å åpne katalogen i Visual Studio Code og inspiser innholdet. Behold vinduet åpent for de neste demo-modulene.
     ```sh
     code iac-terraform-demo/
     ```
 
-# **Gå videre til: [Terraform demo 1 - Initialisering og provisjonering](./05-terraform-demo-1.md)**
+# **Gå videre til: [Terraform demo 1 - Initialisering og provisjonering av infrastruktur](./05-terraform-demo-1.md)**
