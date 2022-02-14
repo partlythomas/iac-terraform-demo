@@ -92,6 +92,22 @@ For å verifisere at ressursen faktisk har blitt endret kan du finne frem til de
 
 5. Verifiser at ressursen har taggene `Environment:Terraform Demo` og `Team:DevOps` definert. Dette bekrefter at endringen du utførte med Terraform var vellykket.
 
+
+---
+
+## Opprydding
+1. Kjør følgende kommando for å rydde opp og slette ressursen(e) som ble opprettet i Azure med Terraform
+
+    ```sh
+    terraform destroy
+    ```
+
+    Igjen, skriv inn inn ditt demo-brukernavn (uten @domene.eksempel) når du blir bedt om dette.
+
+    Kjøring av kommandoen vil oppsummere alle ressursene som vil bli slettet (`destroy`) i Azure basert på konfigurasjonen i `main.tf`-filen og eventuelt andre `.tf` filer i samme katalog. I tillegg vil Terraform be om bekreftelse om å utføre slette-handlingene
+
+    Skriv `yes` og trykk ENTER.
+
 ---
 
 ### Bonus: Publiser endringene dine til GitHub med git push
