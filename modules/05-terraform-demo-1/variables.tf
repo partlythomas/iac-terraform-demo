@@ -1,5 +1,5 @@
 variable "demo-username" {
-  description = "Your provided demo username"
+  description = "Your provided demo username (without @example.domain. Example: demo-jdf24)"
 }
 
 variable "location" {
