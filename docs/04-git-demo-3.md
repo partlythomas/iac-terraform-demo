@@ -18,12 +18,12 @@ Vi ønsker å arbeide med koden i repositoriet `iac-terraform-demo` på lokal ma
     mkdir code
     ```
 
-    ```console
+    ```sh
     cd code
     ```
 
 6. Skriv `git clone` etterfulgt av den kopierte strengen fra steg 3 og eksekver kommandoen.
-    ```console
+    ```sh
     git clone git@github.com:%dittbrukernavn%/iac-terraform-demo.git
     ```
 
@@ -45,7 +45,7 @@ Eksempel på vellykket initiell kloning:
     ```
 
 8. Verifiser at repositoriet er klonet til forventet katalog, `/code/iac-terraform-demo` ved å åpne katalogen i Visual Studio Code og inspiser innholdet.
-    ```console
+    ```sh
     code iac-terraform-demo/
     ```
 
