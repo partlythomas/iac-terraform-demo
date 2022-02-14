@@ -1,5 +1,5 @@
 # Terraform demo 1 - Initialisering og provisjonering av infrastruktur
-I denne demoen skal du provisjonere en ressursgruppe i Azure. Denne ressursgruppen vil bli brukt videre i de neste demoene.
+I denne demoen skal du provisjonere en ressursgruppe i Azure ved hjelp av Terraform og Azure CLI. Denne ressursgruppen vil bli brukt videre i de neste demoene.
 
 ## Forutsetninger
 - Terraform installert lokalt - Se [Forberedelser](./00-forberedelser.md)
