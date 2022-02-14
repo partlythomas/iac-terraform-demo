@@ -14,7 +14,7 @@ Vi ønsker å arbeide med koden i repositoriet `iac-terraform-demo` på lokal ma
 4. På din lokale maskin, åpne `Git Bash` programvaren eller et annet shell med Git-funksjonalitet (f.eks. WSL2).
 
 5. Opprett katalogn `code` i brukerprofil-katalogn din og endre aktiv katalog/working directory til denne
-    ```shellscript
+    ```sh
     mkdir code
     ```
 
