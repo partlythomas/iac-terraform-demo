@@ -37,7 +37,7 @@ Terraform installeres lokalt for å kunne provisjonere ressurser fra egen kode t
 
 Kjør følgende PowerShell-kommando som administrator:
 ```powershell
-developer@machine$ choco install terraform
+choco install terraform
 ```
 
 [Install Terraform](https://learn.hashicorp.com/tutorials/terraform/install-cli)
