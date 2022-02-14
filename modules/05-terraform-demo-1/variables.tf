@@ -1,6 +1,5 @@
 variable "demo-username" {
   description = "Your provided demo username"
-  default     = ""
 }
 
 variable "location" {
