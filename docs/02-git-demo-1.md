@@ -7,7 +7,7 @@ SSH-nøkler benyttes for autentisering mellom lokal maskin og GitHub. Ved å kny
 1. Åpne Git Bash på lokal maskin
 2. Lim inn teksten under, men med din egen e-postadresse tilknyttet din GitHub-brukerkonto for å generere et SSH-nøkkelpar.
 
-```
+```sh
 ssh-keygen -t ed25519 -C "your_email@example.com"
 ``` 
 
@@ -32,13 +32,13 @@ ssh-keygen -t ed25519 -C "your_email@example.com"
 ## Legg privat SSH-nøkkel til i ssh-agent
 1. Start ssh-agent prosessen med kommandoen under.
 
-```
+```sh
 eval "$(ssh-agent -s)"
 ```
 
 2. Legg den private ssh-nøkkelen som ble generert til i ssh-agent med kommandoen under.
 
-```
+```sh
 ssh-add ~/.ssh/id_ed25519
 ```
 
