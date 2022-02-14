@@ -12,7 +12,7 @@ Om du ikke har en eksisterende GitHub-konto, opprett en på [GitHub](https://git
 ### Windows Terminal
 Ikke strengt nødvendig, men det er et hendig terminal-verktøy uansett som vi kommer til å benytte under demoen.
 
-[Microsoft Store - Windows Terminal](https://www.microsoft.com/en-us/p/windows-terminal)
+[Microsoft Store - Windows Terminal](https://www.microsoft.com/en-us/p/windows-terminal/9n0dx20hk701#activetab=pivot:overviewtab)
 
 ### Visual Studio Code
 Koderedigerings-verktøy med bred støtte for mange språk og tillegg.
