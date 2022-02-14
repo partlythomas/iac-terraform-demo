@@ -49,9 +49,9 @@ For å benytte Terraform mot Azure fra lokal maskin må du først autentisere de
 ## Initialisering og provisjonering av infrastruktur
 Terraform må initialiseres i den aktuelle katalogen hvor konfigurasjonen ligger. Når dette er gjort kan Terraform-kommandoer som `terraform plan/apply/destroy` benyttes.
 
-1. I Visual Studio Code-vinduet som ble åpnet fra tidligere demo-modul, åpne og inspiser filen `[main.tf` i katalogen `modules\05-terraform-demo-1`.
+1. I Visual Studio Code-vinduet som ble åpnet fra tidligere demo-modul, åpne og inspiser filen `main.tf` i katalogen `modules\05-terraform-demo-1`.
     
-    Her vil du se at Terraform-konfigurasjonen benytter `azurerm` som provider og at ressurer som er definert kun er av typen `azurerm_resource_group`.
+    Her vil du se at Terraform-konfigurasjonen benytter `azurerm` som provider og at ressurser som er definert kun er av typen `azurerm_resource_group`.
 
 2. I PowerShell-vinduet med den autentiserte Azure CLI-sesjonen, endre aktiv katalog til `.\code\iac-terraform-demo\modules\05-terraform-demo-1\`.
     ```sh
