@@ -15,7 +15,7 @@ Vi ønsker å arbeide med koden i repositoriet `iac-terraform-demo` på lokal ma
 
 5. Opprett katalogn `code` i brukerprofil-katalogn din og endre aktiv katalog/working directory til denne
     ```sh
-    mkdir code
+    $ mkdir code
     ```
 
     ```sh
