@@ -59,8 +59,79 @@ Terraform må initialiseres i den aktuelle katalogen hvor konfigurasjonen ligger
     ```sh
     terraform init
     ```
+
     Dette klargjør Terraform til å kjøre fra katalogen ved å sørge for at riktige versjoner av Terraform, providers og moduler er installert, i tillegg til at `backend state` konfigureres.
 
     Se [Command: init - Terraform.io](https://www.terraform.io/cli/commands/init) for mer informasjon om kommandoen.
 
-4. 
+4. Planlegg provisjoneringen av ressursgruppen ved å kjøre følgende kommando
+    
+    ```sh
+    terraform plan
+    ```
+
+    Skriv inn inn ditt demo-brukernavn (uten @domene.eksempel) når du blir bedt om dette. Dette er basert på `variables.tf`-filen som blant annet benyttes for å lage unike ressursgrupper i dette tilfellet.
+    
+    Kjøring av kommandoen vil resultere i en en *hypotetisk* plan for hva Terraform vil utføre basert på konfigurasjonen i `main.tf`-filen og eventuelt andre `.tf` filer i samme katalog. `terraform plan` vil aldri faktisk utføre noen potensielt skadelige handlinger.
+    
+    Eksempel på `terraform plan` resultat:
+    ```console
+    Terraform used the selected providers to generate the following execution plan. Resource actions are indicated with the
+    following symbols:
+    + create
+
+    Terraform will perform the following actions:
+
+    # azurerm_resource_group.rg will be created
+    + resource "azurerm_resource_group" "rg" {
+        + id       = (known after apply)
+        + location = "westeurope"
+        + name     = "terraform-demo-jzygex"
+        }
+
+    Plan: 1 to add, 0 to change, 0 to destroy.
+    ```
+
+    Ut i fra eksempelet over er det tydelig at Terraform-konfigurasjonen vår kun vil opprette (`Add`) én ressursgruppe i Azure ved navn `terraform-demo-jzygex`.
+
+    Se [Command: plan - Terraform.io](https://www.terraform.io/cli/commands/plan) for mer informasjon om kommandoen.
+
+5. Når du er komfortabel med hva `terraform plan` resultatet viser kan du kjøre følgende kommando for å provisjonere ressursen(e) i Azure
+
+    ```sh
+    terraform apply
+    ```
+
+    Igjen, skriv inn inn ditt demo-brukernavn (uten @domene.eksempel) når du blir bedt om dette.
+
+    Kjøring av kommandoen vil igjen resultere i en en *hypotetisk* plan for hva Terraform vil utføre basert på konfigurasjonen i `main.tf`-filen og eventuelt andre `.tf` filer i samme katalog. I tillegg vil Terraform be om bekreftelse om å utføre handlingene som er oppsummert i planen.
+
+    Eksempel:
+    ```console
+    Do you want to perform these actions?
+    Terraform will perform the actions described above.
+    Only 'yes' will be accepted to approve.
+    ```
+
+    Skriv `yes` og trykk ENTER.
+
+    Se [Command: apply - Terraform.io](https://www.terraform.io/cli/commands/apply) for mer informasjon om kommandoen.
+
+6. Når `terraform apply` kommandoen er ferdig kjørt vil du se en oppsummering i konsollet over hva som er utført.
+
+    Eksempel:
+    ```console
+    azurerm_resource_group.rg: Creating...
+    azurerm_resource_group.rg: Creation complete after 0s [id=/subscriptions/99e6f5f2-3eec-46dd-8b9d-521e35f97677/resourceGroups/terraform-demo-jzygex]
+
+    Apply complete! Resources: 1 added, 0 changed, 0 destroyed.
+    ```
+
+## Manuell verifikasjon i Azure-portalen
+For å verifisere at ressursen faktisk har blitt opprettet kan vi finne frem til den i Azure-portalen eller med Azure CLI.
+
+1. Logg inn i Azure-portalen (https://portal.azure.com) med demo-brukeren din og navigér deg til `Subscriptions` via søkefeltet.
+
+2. Åpne Subscriptionen du har tilgang til og åpne menybladet `Resource groups`.
+
+3. Verifiser at du i ressursgruppelisten finner en ressursgruppe med ditt demo-brukernavn, eksempel: `terraform-demo-jzygex`.
