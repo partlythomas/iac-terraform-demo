@@ -15,16 +15,16 @@ Vi ønsker å arbeide med koden i repositoriet `iac-terraform-demo` på lokal ma
 
 5. Opprett katalogn `code` i brukerprofil-katalogn din og endre aktiv katalog/working directory til denne
     ```console
-    developer@machine$ mkdir code
+    mkdir code
     ```
 
     ```console
-    developer@machine$ cd code
+    cd code
     ```
 
 6. Skriv `git clone` etterfulgt av den kopierte strengen fra steg 3 og eksekver kommandoen.
     ```console
-    developer@machine$ git clone git@github.com:%dittbrukernavn%/iac-terraform-demo.git
+    git clone git@github.com:%dittbrukernavn%/iac-terraform-demo.git
     ```
 
 7. Du vil få en advarsel om at tjeneren github.com's autentisitet ikke kan bekreftes og at SSH-nøkkelen vi opprettet tidligere er den som blir benyttet for å utføre klone.operasjonen. Skriv `yes` for å fortsette. Du vil dermed se at data blir hentet ned.
@@ -46,7 +46,7 @@ Eksempel på vellykket initiell kloning:
 
 8. Verifiser at repositoriet er klonet til forventet katalog, `/code/iac-terraform-demo` ved å åpne katalogen i Visual Studio Code og inspiser innholdet.
     ```console
-    developer@machine$ code iac-terraform-demo/
+    code iac-terraform-demo/
     ```
 
 # **Gå videre til: [Terraform demo 1 - Initialisering og provisjonering](./05-terraform-demo-1.md)**
