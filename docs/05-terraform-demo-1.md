@@ -7,6 +7,8 @@ I denne demoen skal du provisjonere en ressursgruppe i Azure ved hjelp av Terraf
 - Windows Terminal instalert - Se [Forberedelser](./00-forberedelser.md)
 - Brukerkonto i en Azure AD tenant med aktiverte PIM-rettigheter til å opprette ressurser i Azure (tildeles under demoen).
 
+---
+
 ## Azure CLI-autentisering
 For å benytte Terraform mot Azure fra lokal maskin må du først autentisere deg med Azure CLI.
 
@@ -41,6 +43,8 @@ For å benytte Terraform mot Azure fra lokal maskin må du først autentisere de
     }
     ]
     ```    
+
+---
 
 ## Initialisering og provisjonering av infrastruktur
 Terraform må initialiseres i den aktuelle katalogen hvor konfigurasjonen ligger. Når dette er gjort kan Terraform-kommandoer som `terraform plan/apply/destroy` benyttes.
@@ -122,16 +126,59 @@ Terraform må initialiseres i den aktuelle katalogen hvor konfigurasjonen ligger
     Eksempel:
     ```console
     azurerm_resource_group.rg: Creating...
-    azurerm_resource_group.rg: Creation complete after 0s [id=/subscriptions/99e6f5f2-3eec-46dd-8b9d-521e35f97677/resourceGroups/terraform-demo-jzygex]
+    azurerm_resource_group.rg: Creation complete after 0s [id=/subscriptions/########-####-####-####-#########/resourceGroups/terraform-demo-jzygex]
 
     Apply complete! Resources: 1 added, 0 changed, 0 destroyed.
     ```
 
+---
+
 ## Manuell verifikasjon i Azure-portalen
-For å verifisere at ressursen faktisk har blitt opprettet kan vi finne frem til den i Azure-portalen eller med Azure CLI.
+For å verifisere at ressursen faktisk har blitt opprettet kan du finne frem til den i Azure-portalen eller med Azure CLI.
 
 1. Logg inn i Azure-portalen (https://portal.azure.com) med demo-brukeren din og navigér deg til `Subscriptions` via søkefeltet.
 
 2. Åpne Subscriptionen du har tilgang til og åpne menybladet `Resource groups`.
 
 3. Verifiser at du i ressursgruppelisten finner en ressursgruppe med ditt demo-brukernavn, eksempel: `terraform-demo-jzygex`.
+
+---
+
+## Opprydding
+1. Kjør følgende kommando for å rydde opp og slette ressursen(e) som ble opprettet i Azure med Terraform
+
+    ```sh
+    terraform destroy
+    ```
+
+    Igjen, skriv inn inn ditt demo-brukernavn (uten @domene.eksempel) når du blir bedt om dette.
+
+    Kjøring av kommandoen vil oppsummere alle ressursene som vil bli slettet (`destroy`) i Azure basert på konfigurasjonen i `main.tf`-filen og eventuelt andre `.tf` filer i samme katalog. I tillegg vil Terraform be om bekreftelse om å utføre slette-handlingene
+
+    Skriv `yes` og trykk ENTER.
+
+    Eksempel:
+
+    ```console
+    Terraform used the selected providers to generate the following execution plan. Resource actions are indicated with the
+    following symbols:
+    - destroy
+
+    Terraform will perform the following actions:
+
+    # azurerm_resource_group.rg will be destroyed
+    - resource "azurerm_resource_group" "rg" {
+        - id       = "/subscriptions/########-####-####-####-#########/resourceGroups/terraform-demo-jzygex" -> null
+        - location = "westeurope" -> null
+        - name     = "terraform-demo-jzygex" -> null
+        - tags     = {} -> null
+        }
+
+    Plan: 0 to add, 0 to change, 1 to destroy.
+
+    Do you really want to destroy all resources?
+    Terraform will destroy all your managed infrastructure, as shown above.
+    There is no undo. Only 'yes' will be accepted to confirm.
+    ```
+
+# **Gå videre til: [Terraform demo 2 - Endre infrastruktur](./06-terraform-demo-2.md)**
