@@ -23,6 +23,25 @@ Koderedigerings-verktøy med bred støtte for mange språk og tillegg.
 [Visual Studio Marketplace - Terraform](https://marketplace.visualstudio.com/items?itemName=HashiCorp.terraform)
 
 
+### Chocolatey
+Chocolatey benyttes for å installere Terraform i Windows.
+
+Kjør følgende PowerShell-kommando som administrator:
+```powershell
+Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
+```
+[Chocolatey Software | Installing Chocolatey](https://chocolatey.org/install)
+
+### Terraform for Windows
+Terraform installeres lokalt for å kunne provisjonere ressurser fra egen kode til Azure.
+
+Kjør følgende PowerShell-kommando som administrator:
+```powershell
+developer@machine$ choco install terraform
+```
+
+[Install Terraform](https://learn.hashicorp.com/tutorials/terraform/install-cli)
+
 ### Azure CLI
 Verktøy for å kunne benytte Azure CLI bash-type (Linux) kommandoer mot Azure.
 
