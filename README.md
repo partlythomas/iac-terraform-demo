@@ -2,7 +2,7 @@
 Dette er en enkel demo for å demonstrere Git og Infrastructure as Code ved bruk av Terraform for å opprette og administrere ressurser i Microsoft Azure.
 Demoen går også innom temaer som basis bruk av Git, Visual Studio Code, Windows Terminal og Azure CLI.
 
-Materialet i dette prosjektet er ment for bruk under intern fagkveld hvor det også vil bli diskutert rundt de ulike områdene
+Materialet i dette prosjektet er ment for bruk under intern fagkveld hvor det også vil bli diskutert rundt de ulike områdene.
 
 # Innholdsfortegnelse
 
