@@ -33,7 +33,7 @@ Etter at ressursene er provisjonert med Terraform kan konfigurasjonsfilene redig
 
 1. I Visual Studio Code, åpne filen `main.tf` i katalogen `modules\06-terraform-demo-2`.
 
-2. Skriv inn følgende konfigurasjon innenfor `resource azurerm_resource_group` ressurs-blokken og lagre filen.
+2. Skriv inn følgende konfigurasjon innenfor `resource azurerm_virutal_network` ressurs-blokken og lagre filen.
 
     ```console
     tags = {
