@@ -146,6 +146,6 @@ Endringene du har utført i repositoriet er kun utført lokalt på din maskin. F
     ```
     Det kan hende du blir bedt om å skrive inn passordet for SSH-nøkkelen din. Tast inn dette og trykk ENTER.
 
-    Kommandoen sier i essens at du ønsker å publisere endringene mot samme sted du hentet repositoriet ned fra. Ved påfølgende `git push` kommandoer innenfor samme lokale katalog behøves det ikke å ta med `--set-origin origin main`-delen.
+    Kommandoen sier i essens at du ønsker å publisere endringene mot samme sted du hentet repositoriet ned fra. Ved påfølgende `git push` kommandoer innenfor samme lokale katalog behøves det ikke å ta med `--set-upstream origin main`-delen.
 
 6. Åpne GitHub-repositoriet ditt i nettleseren og verifiser at `main.tf`-filen i katalogen `modules/06-terraform-demo-02` er oppdatert med tag-konfigurasjonen du skrev inn.
