@@ -142,7 +142,7 @@ Endringene du har utført i repositoriet er kun utført lokalt på din maskin. F
 5. Publiser endringene til Github med følgende kommando
 
     ```sh
-    git push --set-origin origin main
+    git push --set-upstream origin main
     ```
     Det kan hende du blir bedt om å skrive inn passordet for SSH-nøkkelen din. Tast inn dette og trykk ENTER.
 
